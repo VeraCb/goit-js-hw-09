@@ -1,31 +1,26 @@
 
-import flatpickr from "flatpickr";
+import flatpickr from '/flatpickr';
 
-import "flatpickr/dist/flatpickr.min.css";
+import flatpickr from 'flatpickr/dist/flatpickr.min.css';
 
+import './css/common.css';
+import './css/02-timer.css';
 
-
-// const selectedDate = new Date('2024-09-15T00:00:00');
-// const currentDate = new Date();
-
-
-
-// if(selectedDate < currentDate){
-//   window.alert("Please choose a date in the future");
-// } else {
-//   startButton.disabled = false;
-// }
 
 startButton = document.querySelector("[data-start]");
+
 
 startButton.addEventListener('click', function() {
   const selectedDate = new Date(document.getElementById("datetime-picker").value); 
   const currentDate = new Date();
+ 
 
   if(selectedDate < currentDate) {
     window.alert("Please choose a date in the future");
   }
 });
+
+
 
 startButton.addEventListener("click", function(){
   let countDownDate = new Date(document.getElementById("datetime-picker").value).getTime();
