@@ -1,10 +1,9 @@
 
-import flatpickr from '/flatpickr';
-
+import flatpickr from 'flatpickr';
 import flatpickr from 'flatpickr/dist/flatpickr.min.css';
 
-import './css/common.css';
-import './css/02-timer.css';
+import '../css/common.css';
+import '../css/02-timer.css';
 
 
 startButton = document.querySelector("[data-start]");
