@@ -6,7 +6,7 @@ import '../css/common.css';
 import '../css/02-timer.css';
 
 
-startButton = document.querySelector("[data-start]");
+let startButton = document.querySelector("[data-start]");
 
 
 startButton.addEventListener('click', function() {
